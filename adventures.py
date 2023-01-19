@@ -115,42 +115,31 @@ def chatbot_requests(input_prompt, actions, default_prompt, Temperature, key, hi
     #update hystory
     history.append((input_prompt, message))
 
-    prompt = generate_prompt(message, key)
-
     #return actions, history, history
-    return history, history, actions, prompt
+    return history, history, actions, message
 
 
 def display_chatbot(input_message, Temperature, hystory=[]):
     #call the chatbot
-    history, history, actions, propmt = chatbot_requests(input_message, something, something2, Temperature, API_KEY, hystory)
+    history, history, actions, message = chatbot_requests(input_message, something, something2, Temperature, api_key, hystory)
 
-    
+    prompt = generate_prompt(message, api_key)
 
-    return history, history, actions
+    return history, history, actions, prompt
 
 def clear_save():
     global save
     save = []
 
-#testing
-if __name__ == "__main__":
-    #parser
-    parser = argparse.ArgumentParser()
-    #add_arguments
-    parser.add_argument("--api_key", default="WJRgTozs6f0dHPwy4At4j69JYZEZedWY", type=str, required=False, help="API key from AI21")
+#--------------------------------------------------------------main
 
-    #get API_KEY
-    args = parser.parse_args()
-    API_KEY = args.api_key
+api_key = input("Input your API key: ")
 
-    #start the adventure
-    something, something2 = start_chat(fantasy_preset, start_1, API_KEY)
+#start the adventure
+something, something2 = start_chat(fantasy_preset, start_1, api_key)
 
-    demo = gr.Interface(fn=display_chatbot,
-             inputs=["text", gr.Slider(0, 1), "state"],
-             outputs=["chatbot", "state", "text"])
+demo = gr.Interface(fn=display_chatbot,
+        inputs=["text", gr.Slider(0, 1), "state"],
+        outputs=["chatbot", "state", "text"])
 
-    demo.launch()
-
-    #TODO: change the settings of the parser
+demo.launch()
