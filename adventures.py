@@ -119,18 +119,6 @@ def chatbot_requests(input_prompt, actions, default_prompt, Temperature, key, hi
     return history, history, actions, message
 
 
-def display_chatbot(input_message, Temperature, hystory=[]):
-    #call the chatbot
-    history, history, actions, message = chatbot_requests(input_message, something, something2, Temperature, api_key, hystory)
-
-    prompt = generate_prompt(message, api_key)
-
-    return history, history, actions, prompt
-
-def clear_save():
-    global save
-    save = []
-
 #--------------------------------------------------------------main
 
 api_key = input("Input your API key: ")
