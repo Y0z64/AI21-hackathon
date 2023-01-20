@@ -58,7 +58,7 @@ Some changes may occur in the future related to refactorization and QOL.
 
 ## Authors
   - **Yair Salvador**
-    [Y0z64]((https://github.com/Y0z64)
+    [Y0z64](https://github.com/Y0z64)
   - **Billie Thompson** - *Provided README Template* -
     [PurpleBooth](https://github.com/PurpleBooth)
   - **Shaurya Kohli**
