@@ -10,11 +10,11 @@ Submision for (lablabai's AI21 hackathon)[https://lablab.ai/event/ai21-labs-hack
 
 **Link to colab notebook** - https://colab.research.google.com/drive/1_-uu49NgU-qTSE0T-2Umz7g-Oe8n7RI6?authuser=1#scrollTo=m8HRlTWyl_14
 
--Execute the first cell to verify your Runtime is GPU powered, if not change the Runtime type
--Execute both cells under **Requirements** and then the **Start app** cell
--Click on the public link
+* Execute the first cell to verify your Runtime is GPU powered, if not change the Runtime type
+* Execute both cells under **Requirements** and then the **Start app** cell
+* Click on the public link
 
--To startup the generation input any message, after that continue normally
+* **To startup the generation input any message, after that continue normally**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
