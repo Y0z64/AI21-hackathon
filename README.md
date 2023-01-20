@@ -4,7 +4,7 @@
 
 AI text and image generation in a single place, powered by [AI21's J1-jumbo model](https://www.ai21.com/) and [Diffusers](https://github.com/huggingface/diffusers)
 
-Submision for (lablabai's AI21 hackathon)[https://lablab.ai/event/ai21-labs-hackathon]
+Submision for (lablabai AI21 hackathon)[https://lablab.ai/event/ai21-labs-hackathon]
 
 ## Getting Started
 
