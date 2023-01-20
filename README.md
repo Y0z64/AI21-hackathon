@@ -57,10 +57,15 @@ Some changes may occur in the future related to refactorization and QOL.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
-  -**Yair Salvador**
+  - **Yair Salvador**
     [Y0z64]((https://github.com/Y0z64)
   - **Billie Thompson** - *Provided README Template* -
     [PurpleBooth](https://github.com/PurpleBooth)
+  - **Shaurya Kohli**
+    [LinkedIn](www.linkedin.com/in/shaurya-kohli)
+  - **Falalu Barde**
+    [LinkedIn](https://www.linkedin.com/in/falalu-barde)
+  - **Muhammad Saeed**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
