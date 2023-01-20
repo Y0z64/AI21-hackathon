@@ -1,3 +1,7 @@
+<a name="readme-top"></a>
+
+[![MIT License][license-shield]][license-url]
+
 # AI21-hackathon
 
 AI text and image generation in a single place, powered by [AI21's J1-jumbo model](https://www.ai21.com/) and [Diffusers](https://github.com/huggingface/diffusers)
