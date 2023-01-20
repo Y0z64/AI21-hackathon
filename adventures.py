@@ -114,32 +114,19 @@ def chatbot_requests(input_prompt, actions, default_prompt, Temperature, key, hi
 
     #update hystory
     history.append((input_prompt, message))
-
+    
     #return actions, history, history
     return history, history, actions, message
 
 
-def display_chatbot(input_message, Temperature, hystory=[]):
-    #call the chatbot
-    history, history, actions, message = chatbot_requests(input_message, something, something2, Temperature, api_key, hystory)
-
-    prompt = generate_prompt(message, api_key)
-
-    return history, history, actions, prompt
-
-def clear_save():
-    global save
-    save = []
-
 #--------------------------------------------------------------main
-
-api_key = input("Input your API key: ")
-
 #start the adventure
-something, something2 = start_chat(fantasy_preset, start_1, api_key)
+if __name__ == "__main__":
+  api_key = input("Input your API key: ")
+  something, something2 = start_chat(fantasy_preset, start_1, api_key)
 
-demo = gr.Interface(fn=display_chatbot,
-        inputs=["text", gr.Slider(0, 1), "state"],
-        outputs=["chatbot", "state", "text"])
+  demo = gr.Interface(fn=display_chatbot,
+          inputs=["text", gr.Slider(0, 1), "state"],
+          outputs=["chatbot", "state", "text"])
 
-demo.launch()
+  demo.launch()
