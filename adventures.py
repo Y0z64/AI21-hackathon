@@ -121,12 +121,26 @@ def chatbot_requests(input_prompt, actions, default_prompt, Temperature, key, hi
 
 #--------------------------------------------------------------main
 #start the adventure
+
+#LOCAL TESTING
+#The following code will probably not work outside the notebook
 if __name__ == "__main__":
-  api_key = input("Input your API key: ")
-  something, something2 = start_chat(fantasy_preset, start_1, api_key)
+    pass
+    # def display_chatbot(input_message, Temperature, hystory=[]):
+    #     #call the chatbot
+    #     history, history, actions, message = chatbot_requests(input_message, action_list, default_prpt, Temperature, api_key, hystory)
 
-  demo = gr.Interface(fn=display_chatbot,
-          inputs=["text", gr.Slider(0, 1), "state"],
-          outputs=["chatbot", "state", "text"])
+    #     #generate image
+    #     generation_prompt = generate_prompt(message, api_key)
+    #     image = pipe(generation_prompt, guidance_scale=7.5, num_inference_steps=15, generator=generator).images[0]
 
-  demo.launch()
+    #     return history, history, actions, image
+
+    # api_key = input("Input your API key: ")
+    # something, something2 = start_chat(fantasy_preset, start_1, api_key)
+
+    # demo = gr.Interface(fn=display_chatbot,
+    #         inputs=["text", gr.Slider(0, 1), "state"],
+    #         outputs=["chatbot", "state", "text"])
+
+    # demo.launch()
