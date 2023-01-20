@@ -1,7 +1,7 @@
 import requests
 
 #presets for the prompt
-presets = """ studio ghibli, fantasy elegant, highly detailed, digital painting, art station, concept art, smooth, sharp focus, wide angle, art book, wallpaper, splash art, cinematic lighting"""
+presets = """ studio ghibl, fantasy elegant, highly detailed, digital painting, art station, concept art, smooth, sharp focus, wide angle, art book, wallpaper, splash art, cinematic lighting"""
 
 #structure the prompt
 def format_prompt(prompt, presets):
